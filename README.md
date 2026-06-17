@@ -1,8 +1,8 @@
 # Final Project - Emotion Detection Web Application
 
-This repository contains the completed Final Project submission for the "Building and Deploying a Web App using Flask" course on Coursera, developed in partnership with IBM Skills Network.
+This repository contains the completed Final Project submission for the "Developing AI Applications with Python and Flask" course on Coursera, developed in partnership with IBM Skills Network.
 
-The public repository hosted at https://github.com/voravan/Final-Project-Emotion-Detector represents the independent development, execution, and deployment of the required application architecture.
+The public repository hosted at https://github.com/voravan/oaqjp-final-project-emb-ai represents the independent development, execution, and deployment of the required application architecture.
 
 ---
 
@@ -25,7 +25,7 @@ The project demonstrates a complete end-to-end software engineering workflow:
 * Real-time Emotion Analysis: Seamless backend pipeline communicating directly with the Watson NLP Prediction service apiary layer.
 * Intuitive Web UI: Form-based responsive front-end dashboard built with HTML, CSS, and embedded JavaScript.
 * Robust Input Validation: Dynamic error handling infrastructure to manage edge cases and intercept empty strings or missing payload fields.
-* Strict Quality Standards: Backend components fully compliant with PEP 8 layout conventions, verified to achieve a 10.00/10 static code linting benchmark score via pylint.
+* Strict Quality Standards: Backend components fully compliant with PEP 8 layout conventions, verified to achieve a 10.00/10 static code linter score.
 
 ---
 
