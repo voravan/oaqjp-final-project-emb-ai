@@ -2,26 +2,31 @@ import unittest
 from EmotionDetection.emotion_detection import emotion_detector
 
 class TestEmotionDetector(unittest.TestCase):
-    def test_emotion_detector(self):
-        # Test Case 1: Statement involving Joy
-        res_1 = emotion_detector("I am glad this happened")
-        self.assertEqual(res_1['dominant_emotion'], 'joy')
-        
-        # Test Case 2: Statement involving Anger
-        res_2 = emotion_detector("I am really mad about this")
-        self.assertEqual(res_2['dominant_emotion'], 'anger')
-        
-        # Test Case 3: Statement involving Disgust
-        res_3 = emotion_detector("I am feel disgusted with this jokes")
-        self.assertEqual(res_3['dominant_emotion'], 'disgust')
-        
-        # Test Case 4: Statement involving Sadness
-        res_4 = emotion_detector("I am so sad about this")
-        self.assertEqual(res_4['dominant_emotion'], 'sadness')
-        
-        # Test Case 5: Statement involving Fear
-        res_5 = emotion_detector("I am really afraid that this will happen")
-        self.assertEqual(res_5['dominant_emotion'], 'fear')
+    
+    def test_case_joy(self):
+        """Test Case 1: Statement involving Joy"""
+        res = emotion_detector("I am glad this happened")
+        self.assertEqual(res['dominant_emotion'], 'joy')
 
-if __name__ == '__main__':
+    def test_case_anger(self):
+        """Test Case 2: Statement involving Anger"""
+        res = emotion_detector("I am really mad about this")
+        self.assertEqual(res['dominant_emotion'], 'anger')
+
+    def test_case_disgust(self):
+        """Test Case 3: Statement involving Disgust"""
+        res = emotion_detector("I feel disgusted just thinking about it")
+        self.assertEqual(res['dominant_emotion'], 'disgust')
+
+    def test_case_sadness(self):
+        """Test Case 4: Statement involving Sadness"""
+        res = emotion_detector("I am so sad about this news")
+        self.assertEqual(res['dominant_emotion'], 'sadness')
+
+    def test_case_fear(self):
+        """Test Case 5: Statement involving Fear"""
+        res = emotion_detector("I am really scared of what will happen")
+        self.assertEqual(res['dominant_emotion'], 'fear')
+
+if __name__ == "__main__":
     unittest.main()
