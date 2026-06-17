@@ -1,15 +1,17 @@
-# Emotion Detection Web Application
+# Final Project - Emotion Detection Web Application
 
-This is the original project link: https://github.com/ibm-developer-skills-network/oaqjp-final-project-emb-ai.git but I have cloned it on my local machine and pushed it again on new repo for a purpose of using it in the Cloud IDE this the link: https://github.com/voravan/Final-Project-Emotion-Detector for my own repository.
+This repository contains the completed Final Project submission for the "Building and Deploying a Web App using Flask" course on Coursera, developed in partnership with IBM Skills Network.
 
+The public repository hosted at https://github.com/voravan/Final-Project-Emotion-Detector represents the independent development, execution, and deployment of the required application architecture.
+
+---
+
+## Project Description
 A lightweight, responsive web application developed with Python and Flask that leverages the Watson NLP Emotion Detection service. The application analyzes user-submitted textual statements and outputs precise operational metric breakdowns for five core emotional spectrums: **Anger**, **Disgust**, **Fear**, **Joy**, and **Sadness**, alongside identifying the overall **Dominant Emotion**.
 
 ---
 
-## Final Project Summary
-
-This application serves as the final capstone project for the "Building and Deploying a Web App using Flask" course on Coursera, developed in partnership with IBM Skills Network. 
-
+## Final Project Summary & Core Workflow
 The project demonstrates a complete end-to-end software engineering workflow:
 1. Building an application package using modular Python structures.
 2. Integrating external cloud APIs (Watson NLP runtime services via JSON/REST interfaces).
