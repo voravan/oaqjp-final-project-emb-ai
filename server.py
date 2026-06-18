@@ -1,17 +1,17 @@
 """
-This module deploys a Flask server to host an emotion detection tool.
-It communicates with the Watson NLP library package to analyze user entries.
+Flask server interface running the Emotion Detection Application.
+This module handles HTTP routing for the web layout and error tracking.
 """
 from flask import Flask, render_template, request
 from EmotionDetection.emotion_detection import emotion_detector
 
-app = Flask("Emotion Detector Server")
+app = Flask("Emotion Detector")
 
 @app.route("/emotionDetector")
 def emot_detector():
     """
-    Retrieves query parameters, runs analysis via the custom package,
-    and handles valid inputs as well as error validation for blank data.
+    Receives text queries via HTTP requests, submits them for evaluation,
+    and structures string responses back to the viewport.
     """
     text_to_analyze = request.args.get('textToAnalyze')
     response = emotion_detector(text_to_analyze)
@@ -30,10 +30,9 @@ def emot_detector():
 @app.route("/")
 def render_index_page():
     """
-    Renders the default underlying base template html file dashboard layout.
+    Renders the default landing home route HTML template user interface.
     """
     return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-    
