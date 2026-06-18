@@ -15,7 +15,7 @@ def emot_detector():
     text_to_analyze = request.args.get('textToAnalyze')
     response = emotion_detector(text_to_analyze)
     
-    # Task 7: Handle blank or invalid input errors gracefully
+    # Handle blank or invalid input errors gracefully
     if response['dominant_emotion'] is None:
         return "Invalid text! Please try again!"
 
